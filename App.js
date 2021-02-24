@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SafeAreaView, Text, Image } from 'react-native';
+import { Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -8,9 +8,13 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import styles from './styles'
 
 import Home from './src/screens/Home'
+import Profile from './src/screens/Profile'
+import Settings from './src/screens/Settings'
+
 import TakeActionNow from './src/screens/TakeActionNow'
-import AboutUs from './src/screens/AboutUs'
 import Websites from './src/screens/Websites'
+import AboutUs from './src/screens/AboutUs'
+import ContactUs from './src/screens/ContactUs'
 
 /* Logo */
 function LogoTitle() {
@@ -19,46 +23,6 @@ function LogoTitle() {
 			style={styles.logo}
 			source={require('./assets/logo.png')}
 		/>
-	);
-}
-
-function Polls() {
-	return (
-		<SafeAreaView style={styles.features}>
-			<Text>Polls Screen</Text>
-		</SafeAreaView>
-	);
-}
-function Forum() {
-	return (
-		<SafeAreaView style={styles.features}>
-			<Text>Forum Screen</Text>
-		</SafeAreaView>
-	);
-}
-
-function ContactUs() {
-	return (
-		<SafeAreaView style={styles.features}>
-			<Text>Contact Us Screen</Text>
-		</SafeAreaView>
-	);
-}
-
-/* Profile */
-function Profile() {
-	return (
-		<SafeAreaView style={styles.features}>
-		</SafeAreaView>
-	);
-}
-
-/* Settings */
-function Settings() {
-	return (
-		<SafeAreaView style={styles.features}>
-
-		</SafeAreaView>
 	);
 }
 
@@ -88,8 +52,6 @@ function App() {
 								options={{ headerTitle: props => <LogoTitle {...props} /> }}
 							/>
 							<HomeStack.Screen name="Take Action Now" component={TakeActionNow} />
-							<HomeStack.Screen name="Polls" component={Polls} />
-							<HomeStack.Screen name="Forum" component={Forum} />
 							<HomeStack.Screen name="Websites" component={Websites} />
 							<HomeStack.Screen name="About Us" component={AboutUs} />
 							<HomeStack.Screen name="Contact Us" component={ContactUs} />
