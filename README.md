@@ -32,10 +32,11 @@ A mobile application aiming to build mental and physical resilence in young acti
     ```
 4) From the Expo Dev Tools window, choose to run the application on a simulator or in the web browser.
 
-## Using Expo Go
-# Android and iOS Applications
-    * [Android](https://play.google.com/store/apps/details?id=host.exp.exponent)
-    * [iOS](https://itunes.com/apps/exponent)
+## Expo Go
+### Android and iOS Applications
+* [Android](https://play.google.com/store/apps/details?id=host.exp.exponent)
+* [iOS](https://itunes.com/apps/exponent)
 
+### Viewing the application 
 1) Download the Expo Go application onto your mobile device.
 2) After starting Metro Bundler, scan the QR code from the terminal or the Expo Dev Tools window.
