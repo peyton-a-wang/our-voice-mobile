@@ -22,11 +22,11 @@ A mobile application aiming to build mental and physical resilence in young acti
     ```
     git clone https://github.com/peyton-a-wang/our-voice-mobile.git
     ```
-2) Change directory to mobile-app.
+2) Change directory to our-voice-mobile.
     ```
-    cd mobile-app
+    cd our-voice-mobile
     ```
-3) Run `start_app.sh` from the mobile-app directory to start the Metro Bundler HTTP server.
+3) Run `start_app.sh` from the our-voice-mobile directory to start the Metro Bundler HTTP server.
     ```
     bash start_app.sh
     ```
