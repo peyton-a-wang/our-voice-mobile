@@ -17,6 +17,7 @@ export default StyleSheet.create({
     },
     features: {
         flex: 1,
+        justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#FC9C73',
         paddingVertical: 20,
@@ -40,5 +41,24 @@ export default StyleSheet.create({
         marginTop: 20,
         width: 150,
         height: 150
+    },
+    buttonContainer: {
+        padding: 5
+    },
+    websites: {
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#FC9C73',
+        paddingVertical: 20,
+        paddingHorizontal: 20
+    },
+    homeButtons: {
+        padding: 20,
+        backgroundColor: 'grey'
+    },
+    websiteButtons: {
+        padding: 20,
+        backgroundColor: 'grey',
     }
 })
