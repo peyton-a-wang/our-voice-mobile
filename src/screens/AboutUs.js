@@ -1,16 +1,20 @@
 import * as React from 'react';
-import { SafeAreaView, ScrollView, Text, Linking } from 'react-native';
+import { SafeAreaView, ScrollView, Text, Image, Linking } from 'react-native';
 import styles from '../../styles'
 
 const AboutUs = () => {
     return (
-        <SafeAreaView style={styles.features}>
-            <ScrollView style={styles.body}>
+        <ScrollView style={styles.body}>
+            <SafeAreaView style={styles.features}>
                 <Text>Politics are complicated. Our Voice LLC is a mobile app designed by
                     Gen Z for GenZ to give them all the tools they need to take action on
                     the social and political issues they care about.
                 </Text>
 
+                <Image
+			        style={styles.profPic}
+			        source={require('../../assets/emily.png')}
+		        />
                 <Text onPress={() => Linking.openURL('https://www.linkedin.com/in/emily-pattison/')} style={styles.nameLink}>
                     Emily Pattison
                 </Text>
@@ -19,6 +23,10 @@ const AboutUs = () => {
                     MAS, former intern at ACLU of NH and in consulting.
                 </Text>
 
+                <Image
+			        style={styles.profPic}
+			        source={require('../../assets/ana.png')}
+		        />
                 <Text onPress={() => Linking.openURL('https://www.linkedin.com/in/anajha1/')} style={styles.nameLink}>
                     Anandhita Jha
                 </Text>
@@ -28,7 +36,7 @@ const AboutUs = () => {
                     and front-end web development.
                 </Text>
 
-                <Text>Founded: 2020</Text>
+                <Text style={styles.header}>Founded: 2020</Text>
 
                 <Text style={styles.header}>Mission</Text>
                 <Text>
@@ -56,8 +64,9 @@ const AboutUs = () => {
                     Reach us at ourvoicemobileapp@gmail.com or epattiso@wellesley.edu to get 
                     involved, hear more, partner, or offer opportunities for us to feature.
                 </Text>
-            </ScrollView>
-        </SafeAreaView>
+           
+            </SafeAreaView>
+        </ScrollView>
     );
 }
 
