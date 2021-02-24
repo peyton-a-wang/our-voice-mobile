@@ -13,15 +13,14 @@ export default StyleSheet.create({
         height: 40
     },
     body: {
-        paddingTop: 20,
-        paddingHorizontal: 20,
+        flex: 1
     },
     features: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center',
         backgroundColor: '#FC9C73',
-        padding: 20,
+        paddingVertical: 20,
+        paddingHorizontal: 20
     },
     nameLink: {
         paddingTop: 10,
@@ -36,5 +35,10 @@ export default StyleSheet.create({
     subHeader: {
         paddingBottom: 5,
         fontSize: 20
+    },
+    profPic: {
+        marginTop: 20,
+        width: 150,
+        height: 150
     }
 })
