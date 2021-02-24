@@ -15,11 +15,9 @@ A mobile application aiming to build mental and physical resilence in young acti
 * Peyton Wang [(peyton-a-wang)](https://github.com/peyton-a-wang) - VP of Development
 
 ## Requirements
----
 * [Node.js LTS release](https://nodejs.org/en/)
 
 ## Installation
----
 1) Clone this Github repository.
     ```
     git clone https://github.com/peyton-a-wang/our-voice-mobile.git
@@ -35,7 +33,6 @@ A mobile application aiming to build mental and physical resilence in young acti
 4) From the Expo Dev Tools window, choose to run the application on a simulator or in the web browser.
 
 ## Using Expo Go
----
 # Android and iOS Applications
     * [Android](https://play.google.com/store/apps/details?id=host.exp.exponent)
     * [iOS](https://itunes.com/apps/exponent)
