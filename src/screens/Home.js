@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Button, View } from 'react-native';
-import styles from './styles'
+import { SafeAreaView, Button } from 'react-native';
+import styles from '../../styles'
 
-const HomeScreen = () => {
+const Home = ({ navigation }) => {
 	return (
-		<View style={styles.home}>
+		<SafeAreaView style={styles.home}>
 			<Button
 				title="Take Action Now!"
 				onPress={() => navigation.navigate('Take Action Now')}
@@ -29,8 +29,8 @@ const HomeScreen = () => {
 				title="Contact Us"
 				onPress={() => navigation.navigate('Contact Us')}
 			/>
-		</View>
+		</SafeAreaView>
 	);
 }
 
-export default HomeScreen
+export default Home

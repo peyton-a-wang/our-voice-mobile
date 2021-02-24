@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { Button, Linking } from 'react-native';
-import styles from './styles'
+import { SafeAreaView, Button, Linking } from 'react-native';
+import styles from '../../styles'
 
-const TakeActionNowScreen = () => {
+const TakeActionNow = () => {
 	return (
-		<View style={styles.features}>
+		<SafeAreaView style={styles.features}>
 			<Button
 				title="Call Your Rep"
 				onPress={() => Linking.openURL('https://google.com')}
@@ -29,8 +29,8 @@ const TakeActionNowScreen = () => {
 				title="Join"
 				onPress={() => Linking.openURL('https://google.com')}
 			/>
-		</View>
+		</SafeAreaView>
 	);
 }
 
-export default TakeActionNowScreen
+export default TakeActionNow

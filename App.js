@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image } from 'react-native';
+import { SafeAreaView, Text, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -7,9 +7,10 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import styles from './styles'
 
-import HomeScreen from './HomeScreen'
-import TakeActionNowScreen from './TakeActionNowScreen'
-import AboutUsScreen from './AboutUsScreen'
+import Home from './src/screens/Home'
+import TakeActionNow from './src/screens/TakeActionNow'
+import AboutUs from './src/screens/AboutUs'
+import Websites from './src/screens/Websites'
 
 /* Logo */
 function LogoTitle() {
@@ -21,50 +22,43 @@ function LogoTitle() {
 	);
 }
 
-function PollsScreen({ navigation }) {
+function Polls() {
 	return (
-		<View style={styles.features}>
+		<SafeAreaView style={styles.features}>
 			<Text>Polls Screen</Text>
-		</View>
+		</SafeAreaView>
 	);
 }
-function ForumScreen({ navigation }) {
+function Forum() {
 	return (
-		<View style={styles.features}>
+		<SafeAreaView style={styles.features}>
 			<Text>Forum Screen</Text>
-		</View>
-	);
-}
-function WebsitesScreen({ navigation }) {
-	return (
-		<View style={styles.features}>
-			<Text>Websites Screen</Text>
-		</View>
+		</SafeAreaView>
 	);
 }
 
-function ContactUsScreen({ navigation }) {
+function ContactUs() {
 	return (
-		<View style={styles.features}>
+		<SafeAreaView style={styles.features}>
 			<Text>Contact Us Screen</Text>
-		</View>
+		</SafeAreaView>
 	);
 }
 
 /* Profile */
-function ProfileScreen({ navigation }) {
+function Profile() {
 	return (
-		<View style={styles.features}>
-		</View>
+		<SafeAreaView style={styles.features}>
+		</SafeAreaView>
 	);
 }
 
 /* Settings */
-function SettingsScreen({ navigation }) {
+function Settings() {
 	return (
-		<View style={styles.features}>
+		<SafeAreaView style={styles.features}>
 
-		</View>
+		</SafeAreaView>
 	);
 }
 
@@ -85,21 +79,20 @@ function App() {
 						tabBarIcon: ({ color, size }) => (
 							<MaterialCommunityIcons name="home" color={color} size={size} />
 						),
-					}}
-				>
+					}}>
 					{() => (
 						<HomeStack.Navigator>
 							<HomeStack.Screen
 								name="Home"
-								component={HomeScreen}
+								component={Home}
 								options={{ headerTitle: props => <LogoTitle {...props} /> }}
 							/>
-							<HomeStack.Screen name="Take Action Now" component={TakeActionNowScreen} />
-							<HomeStack.Screen name="Polls" component={PollsScreen} />
-							<HomeStack.Screen name="Forum" component={ForumScreen} />
-							<HomeStack.Screen name="Websites" component={WebsitesScreen} />
-							<HomeStack.Screen name="About Us" component={AboutUsScreen} />
-							<HomeStack.Screen name="Contact Us" component={ContactUsScreen} />
+							<HomeStack.Screen name="Take Action Now" component={TakeActionNow} />
+							<HomeStack.Screen name="Polls" component={Polls} />
+							<HomeStack.Screen name="Forum" component={Forum} />
+							<HomeStack.Screen name="Websites" component={Websites} />
+							<HomeStack.Screen name="About Us" component={AboutUs} />
+							<HomeStack.Screen name="Contact Us" component={ContactUs} />
 						</HomeStack.Navigator>
 					)}
 				</Tab.Screen>
@@ -110,11 +103,10 @@ function App() {
 						tabBarIcon: ({ color, size }) => (
 							<MaterialCommunityIcons name="account" color={color} size={size} />
 						),
-					}}
-				>
+					}}>
 					{() => (
 						<ProfileStack.Navigator>
-							<ProfileStack.Screen name="Profile" component={ProfileScreen} />
+							<ProfileStack.Screen name="Profile" component={Profile} />
 						</ProfileStack.Navigator>
 					)}
 				</Tab.Screen>
@@ -125,11 +117,10 @@ function App() {
 						tabBarIcon: ({ color, size }) => (
 							<MaterialCommunityIcons name="cog" color={color} size={size} />
 						),
-					}}
-				>
+					}}>
 					{() => (
 						<SettingsStack.Navigator>
-							<SettingsStack.Screen name="Settings" component={SettingsScreen} />
+							<SettingsStack.Screen name="Settings" component={Settings} />
 						</SettingsStack.Navigator>
 					)}
 				</Tab.Screen>
