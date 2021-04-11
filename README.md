@@ -39,4 +39,4 @@ A mobile application aiming to build mental and physical resilence in young acti
 
 ### Viewing the application 
 1) Download the Expo Go application onto your mobile device.
-2) After starting Metro Bundler, scan the QR code from the terminal or the Expo Dev Tools window.
+2) After starting Metro Bundler, use the camera or scanning app on your phone to scan the QR code located in the terminal or the Expo Dev Tools window.
