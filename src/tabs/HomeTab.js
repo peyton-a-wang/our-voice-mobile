@@ -37,5 +37,5 @@ const HomeTab = () => {
         </Tab.Screen >
     )
 }
-
+ 
 export default HomeTab
