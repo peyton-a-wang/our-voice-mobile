@@ -45,6 +45,18 @@ export default StyleSheet.create({
     buttonContainer: {
         padding: 5
     },
+    buttonContainerRow: {
+        marginBottom: 10,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    action: {
+        flex: 1,
+        justifyContent: 'center',
+        backgroundColor: '#FC9C73',
+        paddingVertical: 20,
+        paddingHorizontal: 20
+    },
     websites: {
         flex: 1,
         alignItems: 'center',
@@ -60,5 +72,10 @@ export default StyleSheet.create({
     websiteButtons: {
         padding: 20,
         backgroundColor: 'grey',
+    },
+    actionButtons: {
+        backgroundColor: '#8CE2D1',
+        padding: 20,
     }
+
 })

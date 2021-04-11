@@ -5,7 +5,7 @@ import TakeActionNow from '../screens/TakeActionNow'
 import Websites from '../screens/Websites'
 import AboutUs from '../screens/AboutUs'
 import ContactUs from '../screens/ContactUs'
-
+import ActionTemplate from '../screens/ActionTemplate'
 
 const HomeStack = createStackNavigator();
 
@@ -31,6 +31,7 @@ const HomeTab = () => {
                     <HomeStack.Screen name="Websites" component={Websites} />
                     <HomeStack.Screen name="About Us" component={AboutUs} />
                     <HomeStack.Screen name="Contact Us" component={ContactUs} />
+                    <HomeStack.Screen name="Action Template" component={ActionTemplate} />
                 </HomeStack.Navigator>
             )}
         </Tab.Screen >
